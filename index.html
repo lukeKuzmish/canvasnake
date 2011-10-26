@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color:   #fff;
+        font-family:        'Georgia', sans serif;
+      }
+
+      #wrapper {
+        margin:             0 auto;
+        width:              800px;
+      }
+
+      h1 {
+        text-align:         center;
+        font-size:          30px;
+      }
+       
+      canvas {
+        margin:             0 auto;
+        background-color:   black;
+        display:            block;  /* required to center the element */
+      }
+      
+    </style>
+
+
+    <script src="js/canvasnake.js"></script>
+    <script src="js/driver.js"></script>
+    <script src="js/animatesnake.js"></script>
+
+    
+    <script>
+      document.pass_to_log = function(str) {
+        if (document.logging) {
+          console.log(str);
+        }
+     }
+    </script>
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>Canvasnake</h1>
+      <canvas id="canvasGame" width='400px' height='400px'>Canvas is not supported</canvas>
+
+    </div>
+  </body>
+</html>
